@@ -1,10 +1,20 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Term from '@/app/term'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main>
+      <header>
+        <h1 className='logo'>MT<span className='logo-thin'>Glossary</span></h1>
+        <input type="text" className='search'/>
+        <div className='navbar'>
+          <div className='navbar-item'>Mode</div>
+          <div className='navbar-item'>Mono</div>
+          <div className='navbar-item'>About</div>
+        </div>
+      </header>
+        <Term />
+      <footer>Magic: The Gathering is a Trademark of Wizards of the Coast, Inc. and Hasbro, Inc. MTGlossary is unofficial Fan Content permitted under the Fan Content Policy.MTGlossary utilizes card data from Scryfall.</footer>
+      {/* <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
@@ -89,7 +99,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   )
 }
