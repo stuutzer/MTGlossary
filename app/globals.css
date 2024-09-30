@@ -105,14 +105,19 @@ header{
   font-size: 1.5rem;
 }
 
-/* Term Styles */
+.nav-item{
+  margin: 0 0.25rem;
+}
+
+.nav-item:hover{
+  color: var(--texta);
+}
 
 .center{
   align-items: center;
   display: flex;
   justify-content: center;
 }
-
 
 .card-image{
   width: 23rem;
@@ -170,6 +175,7 @@ header{
 
 .feedback-share{
   color: var(--textb);
+  display: flex;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -234,8 +240,6 @@ footer{
     flex-direction: column;
     padding: 4rem 4rem 0;
   }
-
-  
 
   .search{
     margin: 0 0 0.5rem;
