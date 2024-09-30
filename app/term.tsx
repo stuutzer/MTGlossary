@@ -1,7 +1,7 @@
 export default function Term() {
     return (
         <div className='center'>
-          <div className='card-image'>image</div>
+          <img src="https://cards.scryfall.io/png/front/1/3/13680953-cf05-4e38-a3cf-22900c02fab7.png?1706240764" alt="card picture" className="card-image"/>
           <div className='term-info'>
             <div className='languages'>
               <div className='language'>EN</div>

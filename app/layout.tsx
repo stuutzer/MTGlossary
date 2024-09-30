@@ -20,6 +20,16 @@ const aileron = Aileron({
       style: 'italic',
     },
     {
+      path: '../public/fonts/Aileron-SemiBold.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Aileron-SemiBoldItalic.otf',
+      weight: '600',
+      style: 'italic',
+    },
+    {
       path: '../public/fonts/Aileron-Bold.otf',
       weight: '700',
       style: 'normal',
