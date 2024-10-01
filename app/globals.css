@@ -64,6 +64,10 @@ main{
   justify-content: space-between;
 }
 
+a:visited{
+  color: inherit;
+}
+
 /* Header Styles */
 
 header{
@@ -81,7 +85,7 @@ header{
   margin: 0 0 0.38rem;
 }
 
-.logo span {
+.logo-thin{
   font-weight: 300;
 }
 
@@ -105,12 +109,12 @@ header{
   font-size: 1.5rem;
 }
 
-.nav-item{
-  margin: 0 0.25rem;
+.hover-b:hover{
+  color: var(--texta);
 }
 
-.nav-item:hover{
-  color: var(--texta);
+.nav-seperator{
+  margin: 0 0.25rem;
 }
 
 .center{
@@ -180,10 +184,26 @@ header{
   font-weight: 400;
 }
 
+.about-title{
+  color: #202020;
+  font-size: 12vw;
+  font-weight: 700;
+}
+
+.about-info-wrapper{
+  display: flex;
+}
+
+.about-info{
+  color: #BBB;
+  font-size: 1.75rem;
+  font-weight: 300;
+  width: 48%;
+}
+
 footer{
   align-items: center;
   color: var(--textb);
-  display: flex;
   font-size: 0.875rem;
   font-weight: 300;
   justify-content: center;
