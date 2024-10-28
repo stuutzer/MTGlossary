@@ -1,9 +1,11 @@
 import { createClient } from '@/lib/supabase/client'
 
-export default async function Term() {
-  let term_id = 1;
+export default async function Term({query}:{query:string}) {
+  console.log(query);
+  
   const supabase = createClient();
-  const { data: translation } = await supabase.from("translations").select().eq('term_id',term_id).single();
+  const { data: term } = await supabase.from("terms").select().eq('term_name',query).single();
+  const { data: translation } = await supabase.from("translations").select().eq('term_id',term.term_id).single();
   console.log(translation)
   let card_url = "https://scryfall.com/card/mkc/129/grave-titan"
   let image_url = "https://cards.scryfall.io/png/front/1/3/13680953-cf05-4e38-a3cf-22900c02fab7.png?1706240764"
@@ -17,8 +19,8 @@ export default async function Term() {
           <div className='term-info'>
             <div className='languages'>
               <div className='hover-b language'>EN</div>
-              <div className='hover-b language'>JP</div>
-              <div className='hover-b language'>ZH</div>
+              <div className='defunct language'>JP</div>
+              <div className='defunct language'>ZH</div>
             </div>
             <h1 className='term-name'>{title}</h1>
             <p className='definition'>{definition}</p>

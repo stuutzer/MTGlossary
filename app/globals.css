@@ -1,4 +1,4 @@
-:root{
+:root {
   --background: #2B2B2B;
   --primary: #DB3E3E;
   --darka: #181818;
@@ -8,7 +8,7 @@
   --textc: #777;
   --textd: #868686;
   --texte: #BBB;
-} 
+}
 
 /* :root{
   --background: #FFF;
@@ -61,24 +61,24 @@ body {
   overflow: hidden;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
 }
 
-a{
+a {
   color: inherit;
 }
 
-a:visited{
+a:visited {
   color: inherit;
 }
 
 /* Header Styles */
 
-header{
+header {
   display: flex;
   flex-direction: column;
   padding: 4rem 8rem 0;
@@ -91,11 +91,11 @@ header{
   margin: 0 0 0.38rem;
 }
 
-.logo-thin{
+.logo-thin {
   font-weight: 300;
 }
 
-.search{
+.search {
   background-color: var(--darka);
   border-radius: 1rem;
   color: var(--texte);
@@ -105,91 +105,95 @@ header{
   width: 32rem;
 }
 
-.search::placeholder{
+.search::placeholder {
   color: var(--textd);
 }
 
-.header-left{
+.header-left {
   align-items: center;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.header-right{
+.header-right {
   color: var(--textb);
   display: flex;
   font-size: 1.3rem;
 }
 
-.hover-b:hover{
+.hover-b:hover {
   color: var(--texta);
 }
 
-.nav-seperator{
+.nav-seperator {
   margin: 0 0.25rem;
 }
 
-.center-a{
+.center-a {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.center-b{
+.center-b {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.card-image{
+.card-image {
   width: 23rem;
   margin: 4rem;
 }
 
-.term-info{
+.term-info {
   max-width: 38%;
 }
 
-.languages{
+.languages {
   display: flex;
 }
 
-.language{
+.language {
   color: var(--textb);
   font-size: 2.375rem;
   font-weight: 700;
   margin: 0 0.5rem 0 0;
 }
 
-.term-name{
+.defunct {
+  text-decoration: line-through;
+}
+
+.term-name {
   color: var(--primary);
   font-size: 5.375rem;
   line-height: 98%;
 }
 
-.tags{
+.tags {
   color: var(--primary);
   font-size: 2rem;
-  font-style: italic; 
+  font-style: italic;
   font-weight: 600;
 }
 
-.definition{
+.definition {
   color: var(--texta);
   font-size: 2rem;
   font-weight: 400;
   margin: 0.25rem 0;
 }
 
-.postscript{
+.postscript {
   color: var(--textb);
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.flavour-text{
+.flavour-text {
   color: var(--textc);
   font-size: 1.875rem;
   font-style: italic;
@@ -197,20 +201,20 @@ header{
   margin: 0.2rem 0;
 }
 
-.feedback-share{
+.feedback-share {
   color: var(--textb);
   display: flex;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-.about-title{
+.about-title {
   color: var(--darkb);
   font-size: 12vw;
   font-weight: 700;
 }
 
-.about-info{
+.about-info {
   display: flex;
   justify-content: center;
   color: var(--texta);
@@ -218,17 +222,17 @@ header{
   font-weight: 300;
 }
 
-.about-info-a{
+.about-info-a {
   margin: 0 2rem;
   width: 45%;
 }
 
-.about-info-b{
+.about-info-b {
   margin: 0 2rem;
   width: 25%;
 }
 
-footer{
+footer {
   align-items: center;
   color: var(--textb);
   font-size: 0.875rem;
@@ -239,111 +243,113 @@ footer{
 }
 
 @media (max-height: 1330px) and (max-width:1920px) {
-  .about-info{
+  .about-info {
     font-size: 1.1rem;
   }
 }
 
 @media (max-height: 1330px) and (max-width:1410px) {
 
-  .center-b{
+  .center-b {
     flex-direction: row;
     margin: 0 6rem 0;
   }
 
-  .card-image{
+  .card-image {
     width: 20rem;
     margin: 4rem;
   }
-  
-  .language{
+
+  .language {
     font-size: 2rem;
     margin: 0 0.5rem 0 0;
   }
-  
-  .term-name{
+
+  .term-name {
     font-size: 5rem;
     line-height: 98%;
   }
-  
-  .tags{
+
+  .tags {
     font-size: 1.75rem;
   }
-  
-  .definition{
+
+  .definition {
     font-size: 1.75rem;
     margin: 0.25rem 0;
   }
-  
-  .postscript{
+
+  .postscript {
     font-size: 1.25rem;
   }
-  
-  .flavour-text{
+
+  .flavour-text {
     font-size: 1.6rem;
     margin: 0.2rem 0;
   }
-  
-  .feedback-share{
+
+  .feedback-share {
     font-size: 1rem;
   }
 
-  .about-title{
+  .about-title {
     font-size: 10.5rem;
     max-height: 50rem;
     writing-mode: vertical-rl;
   }
-  
-  .about-info{
+
+  .about-info {
     flex-direction: column;
     font-size: 1rem;
     margin: 0;
     padding: 0
   }
 
-  .about-info-a{
+  .about-info-a {
     margin: 0;
     width: 100%;
   }
-  .about-info-b{
+
+  .about-info-b {
     margin: 0;
     width: 100%;
   }
 }
 
 @media (max-height: 1330px) and (max-width:1246px) {
-  header{
+  header {
     padding: 4rem 4rem 0;
   }
 
 
-  .search{
+  .search {
     margin: 0 0 0.5rem;
     width: 24rem;
   }
 
-  .header-right{
+  .header-right {
     font-size: 1.1rem;
   }
 
-  .term-info{
+  .term-info {
     max-width: 65%;
   }
 
-  .card-image{
+  .card-image {
     display: none;
   }
 
-  .about-info-a{
-    margin: 0;
-    width: 100%;
-  }
-  .about-info-b{
+  .about-info-a {
     margin: 0;
     width: 100%;
   }
 
-  footer{
+  .about-info-b {
+    margin: 0;
+    width: 100%;
+  }
+
+  footer {
     font-size: 0.75rem;
     padding: 4rem;
   }
@@ -352,19 +358,19 @@ footer{
 
 @media (max-height: 1330px) and (max-width:870px) {
 
-  header{
+  header {
     align-items: baseline;
     flex-direction: column;
   }
 
-  .about-title{
+  .about-title {
     display: none;
   }
 }
 
 
 @media (max-height: 1330px) and (max-width:795px) {
-  header{
+  header {
     align-items: baseline;
     flex-direction: column;
   }
@@ -373,69 +379,70 @@ footer{
 
 
 @media (max-height: 1330px) and (max-width:730px) {
-  header{
+  header {
     padding: 2rem 2rem 0;
   }
 
-  .header-left{
+  .header-left {
     width: 100%;
   }
 
-  .header-right{
+  .header-right {
     font-size: 0.9rem;
   }
 
-  .search{
+  .search {
     width: 96%;
     padding: 0.5rem 2%;
   }
 
-  .term-info{
+  .term-info {
     max-width: 100%;
     padding: 2rem;
   }
 
-  .language{
+  .language {
     font-size: 2rem;
     margin: 0 0.5rem 0 0;
   }
-  
-  .term-name{
+
+  .term-name {
     font-size: 3.5rem;
   }
-  
-  .tags{
+
+  .tags {
     font-size: 1.5rem;
   }
-  
-  .definition{
+
+  .definition {
     font-size: 1.5rem;
     margin: 0.25rem 0;
   }
-  
-  .postscript{
+
+  .postscript {
     font-size: 1rem;
   }
-  
-  .flavour-text{
+
+  .flavour-text {
     font-size: 1.25rem;
     margin: 0.2rem 0;
   }
-  
 
-  footer{
+
+  footer {
     padding: 2rem;
   }
 
 }
 
 @media (max-height: 1330px) and (max-width:490px) {
-  .logo{
+  .logo {
     font-size: 2rem;
   }
 }
+
 @media (max-height: 1330px) and (max-width:400px) {
-  header{
+  header {
     align-items: center;
     padding: 2rem 2rem 0;
   }
@@ -445,78 +452,78 @@ footer{
     margin: 0;
   }
 
-  .header-left{
+  .header-left {
     flex-direction: column;
     text-align: center;
     width: 100%;
   }
 
-  .header-right{
+  .header-right {
     font-size: 1rem;
   }
 
-  .search{
+  .search {
     font-size: 1.2rem;
     margin: 0.25rem 0;
     padding: 0.5rem 15%;
     width: 70%;
   }
 
-  .term-info{
+  .term-info {
     max-width: 100%;
     padding: 1rem;
   }
 
-  .language{
+  .language {
     font-size: 1.7rem;
     margin: 0 0.5rem 0 0;
   }
-  
-  .term-name{
+
+  .term-name {
     font-size: 3rem;
   }
-  
-  .tags{
+
+  .tags {
     font-size: 1.25rem;
   }
-  
-  .definition{
+
+  .definition {
     font-size: 1.25rem;
     margin: 0.25rem 0;
   }
-  
-  .postscript{
+
+  .postscript {
     font-size: 0.8rem;
   }
-  
-  .flavour-text{
+
+  .flavour-text {
     font-size: 1.1rem;
     margin: 0.2rem 0;
   }
 
-  .feedback-share{
+  .feedback-share {
     font-size: 0.8rem;
   }
 
-  footer{
+  footer {
     font-size: 0.6rem;
     padding: 2rem;
   }
 
-  .about-info{
+  .about-info {
     font-size: 0.8rem;
   }
 
-  .center-b{
+  .center-b {
     margin: 1rem;
   }
 
-  .about-info-a{
+  .about-info-a {
     margin: 0rem;
     width: 100%;
   }
-  
-  .about-info-b{
+
+  .about-info-b {
     margin: 0rem;
     width: 100%;
   }
@@ -525,278 +532,277 @@ footer{
 
 
 @media (max-height: 970px) and (max-width:1920px) {
-  header{
+  header {
     padding: 3rem 6rem 0;
   }
-  
+
   .logo {
     font-size: 2rem;
     margin: 0 0 0.38rem;
   }
-  
-  .search{
+
+  .search {
     border-radius: 1rem;
     font-size: 1.25rem;
     padding: 0.3rem 0.5rem;
     width: 24rem;
   }
-  
-  .header-right{
+
+  .header-right {
     font-size: 1rem;
   }
-  
-  
-  .card-image{
+
+
+  .card-image {
     width: 16rem;
     margin: 3rem;
     display: flex;
   }
-  
-  .term-info{
+
+  .term-info {
     max-width: 38%;
   }
-  
-  .language{
+
+  .language {
     font-size: 1.75rem;
     margin: 0 0.3rem 0 0;
   }
-  
-  .term-name{
+
+  .term-name {
     font-size: 3.75rem;
     line-height: 98%;
   }
-  
-  .tags{
+
+  .tags {
     font-size: 1.4rem;
   }
-  
-  .definition{
+
+  .definition {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0.2rem 0;
   }
-  
-  .postscript{
+
+  .postscript {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  
-  .flavour-text{
+
+  .flavour-text {
     font-size: 1.4rem;
     margin: 0.2rem 0;
   }
-  
-  .feedback-share{
+
+  .feedback-share {
     font-size: 1rem;
   }
-  
-  footer{
+
+  footer {
     font-size: 0.7rem;
     padding: 3rem;
   }
 }
 
-@media (max-height: 970px) and (max-width:1410px){
-  .about-title{
+@media (max-height: 970px) and (max-width:1410px) {
+  .about-title {
     font-size: 8rem;
     max-height: 40rem;
     writing-mode: vertical-rl;
   }
 }
 
-@media (max-height: 970px) and (max-width:1058px){
-  header{
+@media (max-height: 970px) and (max-width:1058px) {
+  header {
     padding: 3rem 4.5rem 0;
   }
-  
+
   .logo {
     margin: 0 0 0.3rem;
   }
 
-  
-  .card-image{
+
+  .card-image {
     width: 15rem;
     margin: 3rem;
   }
-  
-  .language{
+
+  .language {
     font-size: 1.5rem;
     margin: 0 0.3rem 0 0;
   }
-  
-  .term-name{
+
+  .term-name {
     font-size: 3.4rem;
     line-height: 98%;
   }
-  
-  .tags{
+
+  .tags {
     font-size: 1.2rem;
   }
-  
-  .definition{
+
+  .definition {
     font-size: 1.2rem;
     margin: 0.2rem 0;
   }
-  
-  .postscript{
+
+  .postscript {
     font-size: 0.9rem;
   }
-  
-  .flavour-text{
+
+  .flavour-text {
     font-size: 1.1rem;
     margin: 0.2rem 0;
   }
-  
-  .feedback-share{
+
+  .feedback-share {
     font-size: 0.8rem;
   }
 
-  
-  footer{
+
+  footer {
     font-size: 0.7rem;
     padding: 3rem;
   }
 }
 
-@media (max-height: 970px) and (max-width:935px){
-  header{
+@media (max-height: 970px) and (max-width:935px) {
+  header {
     align-items: baseline;
     flex-direction: column;
     padding: 3rem 3rem 0;
   }
-  
+
   .logo {
     margin: 0 0 0.3rem;
   }
 
-  .header-right{
+  .header-right {
     font-size: 0.9rem;
   }
-  
-  .search{
+
+  .search {
     border-radius: 1rem;
     font-size: 1.25rem;
     width: 16rem;
   }
-  
-  .card-image{
+
+  .card-image {
     display: none;
   }
 
-  .term-info{
+  .term-info {
     max-width: 65%;
   }
-  
-  .language{
+
+  .language {
     font-size: 1.5rem;
     margin: 0 0.3rem 0 0;
   }
-  
-  .term-name{
+
+  .term-name {
     font-size: 3.4rem;
     line-height: 98%;
   }
-  
-  .tags{
+
+  .tags {
     font-size: 1.2rem;
   }
-  
-  .definition{
+
+  .definition {
     font-size: 1.2rem;
     margin: 0.2rem 0;
   }
-  
-  .postscript{
+
+  .postscript {
     font-size: 0.9rem;
   }
-  
-  .flavour-text{
+
+  .flavour-text {
     font-size: 1.1rem;
     margin: 0.2rem 0;
   }
-  
-  .feedback-share{
+
+  .feedback-share {
     font-size: 0.8rem;
   }
 
-  
-  footer{
+
+  footer {
     font-size: 0.6rem;
     padding: 3rem;
   }
 }
 
-@media (max-height: 970px) and (max-width:550px){
-  header{
+@media (max-height: 970px) and (max-width:550px) {
+  header {
     padding: 2rem 2rem 0;
   }
 
-  .header-left{
+  .header-left {
     width: 100%;
   }
-  
-  .search{
+
+  .search {
     width: 96%;
     padding: 0.3rem 2%;
   }
 
-  
+
   .logo {
     margin: 0 0 0.3rem;
   }
-  
-  .search{
+
+  .search {
     border-radius: 1rem;
     font-size: 1.25rem;
   }
 
-  .term-info{
+  .term-info {
     max-width: 100%;
     padding: 2rem;
   }
-  
-  .term-name{
+
+  .term-name {
     font-size: 3rem;
     line-height: 98%;
   }
-  
-  .tags{
+
+  .tags {
     font-size: 1.2rem;
   }
-  
-  .postscript{
+
+  .postscript {
     font-size: 0.8rem;
   }
-  
-  .flavour-text{
+
+  .flavour-text {
     font-size: 1rem;
     margin: 0.2rem 0;
   }
 
-  .about-info{
+  .about-info {
     font-size: 0.9rem;
   }
-  
-  footer{
+
+  footer {
     padding: 2rem;
   }
 }
 
-@media (max-height: 970px) and (max-width:360px){
-  header{
+@media (max-height: 970px) and (max-width:360px) {
+  header {
     align-items: center;
     padding: 2rem 2rem 0;
   }
 
-  .header-left{
+  .header-left {
     text-align: center;
     width: 100%;
   }
 
-  .search{
+  .search {
     font-size: 1.2rem;
     padding: 0.5rem 15%;
     width: 70%;
   }
 }
-
