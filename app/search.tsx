@@ -1,7 +1,8 @@
 'use client';
 
-import { useSearchParams, usePathname, useRouter } from 'next/navigation';
+import { useSearchParams, usePathname, useRouter, redirect } from 'next/navigation';
 import React, { useState } from 'react'
+import { navigate } from './actions'
 
 
 export default function Search({ placeholder }: { placeholder: string }) {
@@ -18,7 +19,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
           } else {
             params.delete('term');
           }
-        replace(`${pathname}?${params.toString()}`)
+          navigate(params.toString());
       }
     }
 

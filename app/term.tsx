@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/client'
 
-export default async function Term({query}:{query:string}) {
+export default async function Term({query = "deathtouch"}:{query:string}) {
   console.log(query);
   
   const supabase = createClient();

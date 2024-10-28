@@ -11,7 +11,7 @@ export default function Header() {
       <div className='header-right'>
       <Link className="hover-b nav-item" href="/about">About</Link>
       <div className="nav-seperator">|</div>
-      <Link className="defunct nav-item" href="/">Random</Link>
+      <div className="defunct nav-item">Contrast</div>
       <div className="nav-seperator">|</div>
       <div className="defunct nav-item">Theme</div>
     </div>

@@ -9,7 +9,7 @@ export default async function Home(props: {
   }>;
 }) {
   const searchParams = await props.searchParams;
-  const term = searchParams?.term || '';
+  const term = searchParams?.term;
   return (
     <main>
       <Header />
