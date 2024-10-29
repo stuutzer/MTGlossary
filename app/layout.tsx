@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ThemeProvider } from 'next-themes'
 import Aileron from 'next/font/local'
 import './globals.css'
 
@@ -48,8 +49,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={aileron.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={aileron.className}>
+        <ThemeProvider defaultTheme='dark'>{children}</ThemeProvider>
+      </body>
     </html>
   )
 }

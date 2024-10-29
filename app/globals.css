@@ -1,3 +1,4 @@
+
 :root {
   --background: #2B2B2B;
   --primary: #DB3E3E;
@@ -10,17 +11,19 @@
   --texte: #BBB;
 }
 
-/* :root{
-  --background: #FFF;
-  --primary: #DB3E3E;
-  --darka: #DB3E3E;
-  --darkb: #D9D9D9;
-  --texta: #DB3E3E;
-  --textb: #777;
-  --textc: #777;
-  --textd: #FFF;
-  --texte: #FFF;
-} */
+[data-theme='light'] {
+
+    --background: #FFF;
+    --primary: #DB3E3E;
+    --darka: #DB3E3E;
+    --darkb: #D9D9D9;
+    --texta: #DB3E3E;
+    --textb: #777;
+    --textc: #777;
+    --textd: #FFF;
+    --texte: #FFF;
+
+}
 
 /* :root{
   --background: #ffffff;
@@ -76,6 +79,19 @@ a:visited {
   color: inherit;
 }
 
+.semi {
+  font-weight: 600;
+}
+
+.regular{
+  font-weight: 400;
+}
+
+
+.bold {
+  font-weight: 700;
+}
+
 /* Header Styles */
 
 header {
@@ -124,6 +140,7 @@ header {
 
 .hover-b:hover {
   color: var(--texta);
+  cursor: pointer;
 }
 
 .nav-seperator {
@@ -144,8 +161,9 @@ header {
 }
 
 .card-image {
-  width: 23rem;
+  border-radius: 4.5%;
   margin: 4rem;
+  width: 23rem;
 }
 
 .term-info {
