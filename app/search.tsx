@@ -17,7 +17,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
           } else {
             params.delete('term');
           }
-          navigate(params.toString());
+          navigate(params.toString().toLowerCase());
       }
     }
 
