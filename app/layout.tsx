@@ -50,9 +50,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8877362001138988"
+     crossOrigin="anonymous"></script></head>
       <body className={aileron.className}>
         <ThemeProvider defaultTheme='dark'>{children}</ThemeProvider>
       </body>
+      
     </html>
   )
 }
