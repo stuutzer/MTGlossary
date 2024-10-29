@@ -250,14 +250,17 @@ header {
   width: 25%;
 }
 
-footer {
+.disclaimer{
   align-items: center;
   color: var(--textb);
   font-size: 0.875rem;
   font-weight: 300;
   justify-content: center;
-  padding: 4rem;
+  padding: 2rem;
   text-align: center;
+}
+.adspace{
+  height: 7.5vh;
 }
 
 @media (max-height: 1330px) and (max-width:1920px) {
@@ -367,7 +370,7 @@ footer {
     width: 100%;
   }
 
-  footer {
+  .disclaimer {
     font-size: 0.75rem;
     padding: 4rem;
   }
@@ -447,7 +450,7 @@ footer {
   }
 
 
-  footer {
+  .disclaimer {
     padding: 2rem;
   }
 
@@ -523,7 +526,7 @@ footer {
     font-size: 0.8rem;
   }
 
-  footer {
+  .disclaimer {
     font-size: 0.6rem;
     padding: 2rem;
   }
@@ -615,7 +618,7 @@ footer {
     font-size: 1rem;
   }
 
-  footer {
+  .disclaimer {
     font-size: 0.7rem;
     padding: 3rem;
   }
@@ -677,7 +680,7 @@ footer {
   }
 
 
-  footer {
+  .disclaimer {
     font-size: 0.7rem;
     padding: 3rem;
   }
@@ -745,7 +748,7 @@ footer {
   }
 
 
-  footer {
+  .disclaimer {
     font-size: 0.6rem;
     padding: 3rem;
   }
@@ -802,7 +805,7 @@ footer {
     font-size: 0.9rem;
   }
 
-  footer {
+  .disclaimer {
     padding: 2rem;
   }
 }
