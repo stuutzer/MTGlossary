@@ -2,22 +2,21 @@ import { createClient } from '@/lib/supabase/client'
 
 export default async function Term({query = "deathtouch"}:{query:string}) {
   const supabase = createClient();
-  const { data: term } = await supabase.from("terms").select().eq('term_name',query).single();
   try{
-    const { data: translation } = await supabase.from("translations").select().eq('term_id',term.term_id).single();
+    const { data: test } = await supabase.from("terms").select('term_id, term_name, translations ( card_uri, img_uri, example_card, title, definition, postscript, flavour_text )').eq('term_name',query).single();
     return (
         <div className='center-a'>
-          <a href={ translation.card_uri } target="blank"><img src={ translation.img_uri } alt={translation.example_card} className="card-image"/></a>
+          <a href={ test.translations[0].card_uri } target="blank"><img src={ test.translations[0].img_uri } alt={test.translations[0].example_card} className="card-image"/></a>
           <div className='term-info'>
             <div className='languages'>
               <div className='hover-b language'>EN</div>
               <div className='defunct language'>JP</div>
               <div className='defunct language'>ZH</div>
             </div>
-            <h1 className='term-name'>{translation.title}</h1>
-            <p className='definition'>{translation.definition}</p>
-            <p className='postscript'>{translation.postscript}</p>
-            <p className='flavour-text'>{translation.flavour_text}</p>
+            <h1 className='term-name'>{test.translations[0].title}</h1>
+            <p className='definition'>{test.translations[0].definition}</p>
+            <p className='postscript'>{test.translations[0].postscript}</p>
+            <p className='flavour-text'>{test.translations[0].flavour_text}</p>
           </div>
         </div>
     )
