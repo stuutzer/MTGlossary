@@ -12,7 +12,7 @@ export default function Header() {
       <div className='header-right'>
       <Link className="hover-b nav-item" href="/about">About</Link>
       <div className="nav-seperator">|</div>
-      <a className="hover-b nav-item" href="https://ko-fi.com/watshisname" target='blank'>Donate</a>
+      <a className="hover-b nav-item" href="https://ko-fi.com/watshisname" target='_blank'>Donate</a>
       <div className="nav-seperator">|</div>
       <ThemeSwitch/>
     </div>

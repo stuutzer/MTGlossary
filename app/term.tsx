@@ -6,7 +6,7 @@ export default async function Term({query = "deathtouch"}:{query:string}) {
     const { data: test } = await supabase.from("terms").select('term_id, term_name, translations ( card_uri, img_uri, example_card, title, definition, postscript, flavour_text )').eq('term_name',query).single();
     return (
         <div className='center-a'>
-          <a href={ test.translations[0].card_uri } target="blank"><img src={ test.translations[0].img_uri } alt={test.translations[0].example_card} className="card-image"/></a>
+          <a href={ test.translations[0].card_uri } target="_blank"><img src={ test.translations[0].img_uri } alt={test.translations[0].example_card} className="card-image"/></a>
           <div className='term-info'>
             <div className='languages'>
               <div className='hover-b language'>EN</div>
@@ -23,7 +23,7 @@ export default async function Term({query = "deathtouch"}:{query:string}) {
   } catch(error){
     return (
       <div className='center-a'>
-          <a href="https://scryfall.com/card/soi/67/gone-missing" target="blank"><img src="https://cards.scryfall.io/large/front/e/8/e88ae6bf-9c58-4543-ba66-19ea41d01e9b.jpg?1576384102" alt="Gone Missing" className="card-image"/></a>
+          <a href="https://scryfall.com/card/soi/67/gone-missing" target="_blank"><img src="https://cards.scryfall.io/large/front/e/8/e88ae6bf-9c58-4543-ba66-19ea41d01e9b.jpg?1576384102" alt="Gone Missing" className="card-image"/></a>
           <div className='term-info'>
             <h1 className='term-name'>No Term Found</h1>
             <p className='definition'>We couldn&apos;t find a term called &quot;{ query }&quot;.</p>
