@@ -6,7 +6,7 @@ export default function notFound() {
   return (
     <main>
       <Suspense>
-      <Header />
+      <Header page=""/>
       </Suspense>
       <div className='center-a'>
           <a href="https://scryfall.com/card/rvr/64/totally-lost" target="_blank"><img src="https://cards.scryfall.io/large/front/c/3/c36f01a5-82bf-4fc6-9396-4410067c351b.jpg?1702429424" alt="Get Lost" className="card-image"/></a>

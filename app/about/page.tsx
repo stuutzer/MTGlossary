@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Suspense>
-      <Header />
+      <Header page="about"/>
       </Suspense>
       <About />
       <Footer />

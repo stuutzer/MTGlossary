@@ -15,11 +15,11 @@ export default function ThemeSwitch() {
   }
   if (theme == "dark"){
     return (
-        <div className="hover-b nav-item" onClick={e => setTheme('light')}>Theme</div>
+        <div className="hover-b nav-item" onClick={e => setTheme('light')}>Light Mode</div>
       )
   } else if (theme == "light") {
     return (
-        <div className="hover-b nav-item" onClick={e => setTheme('dark')}>Theme</div>
+        <div className="hover-b nav-item" onClick={e => setTheme('dark')}>Dark Mode</div>
       )
   }
 }

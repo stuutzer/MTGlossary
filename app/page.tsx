@@ -12,7 +12,7 @@ export default async function Home(props: {
   const term = searchParams?.term;
   return (
     <main>
-      <Header />
+      <Header page=""/>
       <Term query={term}/>
       <Footer />
     </main>
