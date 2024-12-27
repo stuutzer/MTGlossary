@@ -18,6 +18,8 @@ export default function Header({page}: {page:string}) {
       <div className='header-right'>
       <Link className="hover-b nav-item" href={link}>{name}</Link>
       <div className="nav-seperator">|</div>
+      <a className="hover-b nav-item" href="https://ko-fi.com/watshisname" target='_blank'>Donate</a>
+      <div className="nav-seperator">|</div>
       <ThemeSwitch/>
     </div>
     </div>
