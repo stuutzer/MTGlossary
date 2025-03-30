@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 import Aileron from 'next/font/local'
+import Header from './header';
+import Footer from './footer';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css'
 
@@ -52,7 +54,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={aileron.className}>
-        <ThemeProvider defaultTheme='dark'>{children}</ThemeProvider>
+        <ThemeProvider defaultTheme='dark'>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
         <SpeedInsights />
       </body>
       

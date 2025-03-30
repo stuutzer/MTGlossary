@@ -6,7 +6,7 @@ export default async function Term({query = "deathtouch"}:{query:string}) {
     const { data: test } = await supabase.from("terms").select('term_id, term_name, translations ( card_uri, img_uri, example_card, title, definition, postscript, flavour_text )').eq('term_name',query).single();
     return (
         <div className='center-a'>
-          <a href={ test.translations[0].card_uri } target="_blank"><img src={ test.translations[0].img_uri } alt={test.translations[0].example_card} className="card-image"/></a>
+          <a href={ test.translations[0].card_uri } target="_blank" className='image-link'><img src={ test.translations[0].img_uri } alt={test.translations[0].example_card} className="card-image"/></a>
           <div className='term-info'>
             <div className='languages'>
               <div className='hover-b language'>EN</div>

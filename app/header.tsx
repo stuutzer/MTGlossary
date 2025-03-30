@@ -2,28 +2,22 @@ import Link from 'next/link'
 import Search from '@/app/search'
 import ThemeSwitch from '@/app/theme-toggle'
 
-export default function Header({page}: {page:string}) {
-  let link = "/about";
-  let name = "About";
-  if (page === "about") {
-    link = "/";
-    name = "Home";
-  };
+export default function Header() {
   return (
     <header>
-    <div className="header-left">
-      <a href="/">
-        <h1 className='logo'>MT<span className='logo-thin'>Glossary</span></h1>
-      </a>
-      <div className='header-right'>
-      <Link className="hover-b nav-item" href={link}>{name}</Link>
-      <div className="nav-seperator">|</div>
-      <a className="hover-b nav-item" href="https://ko-fi.com/watshisname" target='_blank'>Donate</a>
-      <div className="nav-seperator">|</div>
-      <ThemeSwitch/>
-    </div>
-    </div>
-    <Search placeholder="Search for a term..."/>
+      <div className="header-left">
+        <Link href="/">
+          <h1 className='logo'>MT<span className='logo-thin'>Glossary</span></h1>
+        </Link>
+        <div className='header-right'>
+        <Link className="hover-b nav-item" href="/about">About</Link>
+        <div className="nav-seperator">|</div>
+        <a className="hover-b nav-item" href="https://ko-fi.com/watshisname" target='_blank'>Donate</a>
+        <div className="nav-seperator">|</div>
+        <ThemeSwitch/>
+      </div>
+      </div>
+      <Search placeholder="Search for a term..."/>
     </header>
   )
 }
