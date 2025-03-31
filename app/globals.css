@@ -37,7 +37,7 @@ body {
 }
 
 main {
-  height: calc(100vh - 20rem);
+  height: calc(100vh - 21rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,15 +68,21 @@ a:visited {
 
 header {
   display: flex;
-  flex-direction: column;
-  height: 10rem;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  height: 11rem;
 }
 
 .logo {
   color: var(--primary);
   font-size: 3rem;
   font-weight: 700;
-  margin: 0 0 0.38rem;
+}
+
+.logo-link {
+  margin: 0 0 0.5rem 0;
+  width: fit-content;
 }
 
 .logo-thin {
@@ -91,6 +97,7 @@ header {
   font-weight: 400;
   padding: 0.5rem 0.75rem;
   width: 32rem;
+  height: 2rem;
 }
 
 .search::placeholder {
@@ -98,10 +105,11 @@ header {
 }
 
 .header-left {
-  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: fit-content;
+  margin: 0 0 0 8rem;
 }
 
 .header-right {
@@ -109,7 +117,11 @@ header {
   display: flex;
   font-size: 1.5rem;
   font-weight: 500;
-  margin: 0 1rem;
+  margin: 0 8rem 0 0;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #1e1e1e;
 }
 
 .hover-b:hover {
@@ -127,6 +139,7 @@ header {
   align-items: center;
   display: flex;
   justify-content: center;
+  width: fit-content;
 }
 
 .center-b {
@@ -142,11 +155,11 @@ header {
 }
 
 .image-link {
-  margin: 4rem;
+  margin: 0 4rem 0 0;
 }
 
 .term-info {
-  max-width: 38%;
+  max-width: 50rem;
 }
 
 .languages {
@@ -186,16 +199,16 @@ header {
 
 .postscript {
   color: var(--textb);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .flavour-text {
   color: var(--textc);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-style: italic;
   font-weight: 400;
-  margin: 0.2rem 0;
+  margin: 0.5rem 0 0;
 }
 
 .feedback-share {
@@ -233,14 +246,14 @@ footer {
   display: flex;
   align-items: center;
   color: var(--textb);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 300;
   justify-content: center;
   text-align: center;
   height: 10rem;
 }
 
-@media (max-height: 1330px) and (max-width:1920px) {
+/* @media (max-height: 1330px) and (max-width:1920px) {
   .about-info {
     font-size: 1.1rem;
   }
@@ -803,4 +816,4 @@ footer {
     padding: 0.5rem 15%;
     width: 70%;
   }
-}
+} */

@@ -18,7 +18,7 @@ export default function About() {
           <br /><br />
           Nowadays, I exclusively play mono-black decks.
           <br /><br />
-          You can check out my portfolio <span className="defunct">here</span>.
+          You can check out my portfolio <a href="https://watshisname-stuutzer.com" className="defunct" target="_blank">here</a>.
           <br /><br />
           </p>
         </div>

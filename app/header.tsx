@@ -6,18 +6,18 @@ export default function Header() {
   return (
     <header>
       <div className="header-left">
-        <Link href="/">
+        <Link href="/" className='logo-link'>
           <h1 className='logo'>MT<span className='logo-thin'>Glossary</span></h1>
         </Link>
+        <Search placeholder="Search for a term..."/>
+      </div>
         <div className='header-right'>
-        <Link className="hover-b nav-item" href="/about">About</Link>
+        <Link className="hover-b nav-item" href="/">Home</Link>
         <div className="nav-seperator">|</div>
-        <a className="hover-b nav-item" href="https://ko-fi.com/watshisname" target='_blank'>Donate</a>
+        <Link className="hover-b nav-item" href="/about">About</Link>
         <div className="nav-seperator">|</div>
         <ThemeSwitch/>
       </div>
-      </div>
-      <Search placeholder="Search for a term..."/>
     </header>
   )
 }
