@@ -113,7 +113,7 @@ header {
 }
 
 .header-right {
-  color: var(--textb);
+  color: var(--textd);
   display: flex;
   font-size: 1.5rem;
   font-weight: 500;
@@ -121,7 +121,7 @@ header {
   height: fit-content;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #1e1e1e;
+  background-color: #181818;
 }
 
 .hover-b:hover {
@@ -246,7 +246,7 @@ footer {
   display: flex;
   align-items: center;
   color: var(--textb);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   justify-content: center;
   text-align: center;

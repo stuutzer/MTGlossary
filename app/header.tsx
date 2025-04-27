@@ -2,7 +2,10 @@ import Link from 'next/link'
 import Search from '@/app/search'
 import ThemeSwitch from '@/app/theme-toggle'
 
+
+
 export default function Header() {
+  
   return (
     <header>
       <div className="header-left">
