@@ -14,11 +14,11 @@ export default function About() {
           <p className="about-info-b">
           <span className="regular">I’m Justin, a developer from Auckland, New Zealand. </span>
           <br /><br />
-          Originally a Yu-Gi-Oh! player, I stopped playing once my favourite archetype Dark World was power crept out of the TCG format. Soon after, I found my way to EDH in the form of a Necron Dynasties commander precon.
+          Originally a Yu-Gi-Oh! player, I stopped playing once my favourite archetype Dark World was power crept out of the TCG format. Soon after, I found my way to MTG in the form of a Necron Dynasties commander precon.
           <br /><br />
-          Nowadays, I exclusively play mono-black decks.
+          Nowadays, I exclusively play mono-black commander.
           <br /><br />
-          You can check out my portfolio <a href="https://watshisname-stuutzer.com" className="defunct" target="_blank">here</a>.
+          You can check out my portfolio <a href="https://watshisname-stuutzer.com" className="bold" target="_blank">here</a>.
           <br /><br />
           </p>
         </div>
